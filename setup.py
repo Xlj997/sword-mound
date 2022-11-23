@@ -4,7 +4,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="swork_mound",
+    name="sword_mound",
     version="0.0.1",
     author="Linjie Xing",
     author_email="jin.951107@gmail.com",
@@ -16,7 +16,7 @@ setuptools.setup(
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'sm=swork_mound.converter:run'
+            'sm=sword_mound.converter:run'
         ],
     },
     classifiers=(
