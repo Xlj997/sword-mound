@@ -3,7 +3,7 @@
 # @Time    : 2022/11/23 15:54
 # @Author  : lj
 # @File    : __init__.py.py
-from sword_mound.set_sword_mound_config import use_config_form_sword_mound_config_module
+# from sword_mound.set_sword_mound_config import use_config_form_sword_mound_config_module
 from sword_mound import sword_mound_config_default
 from sword_mound.patch.print_patch import patch_print_stop as sm_patch_print_stop
 from sword_mound.patch.print_patch import patch_print_run as sm_patch_print_run
@@ -19,5 +19,6 @@ __all__ = [
     'sm_urlparse',
     'sm_decorators'
 ]
+
 if sword_mound_config_default.DEFAULUT_USE_PRINT_PATCH:
     sm_patch_print_run()
