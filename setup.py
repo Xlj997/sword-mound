@@ -11,7 +11,7 @@ setuptools.setup(
     description="工具库",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Xlj997/swork-mound",
+    url="https://github.com/Xlj997/sword-mound",
     packages=setuptools.find_packages(),
     install_requires=[],
     entry_points={

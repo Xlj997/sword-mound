@@ -3,7 +3,7 @@
 # @Time    : 2022/11/23 16:12
 # @Author  : lj
 # @File    : print_patch.py
-
+import multiprocessing
 import sys
 import time
 import traceback
@@ -52,6 +52,9 @@ def x_print(*args, sep=' ', end='\n', file=None, flush=True):
 
 
 # print = nb_print
+
+def is_main_process():
+    return multiprocessing.process.current_process().name == 'MainProcess'
 
 def patch_print_run():
     """
